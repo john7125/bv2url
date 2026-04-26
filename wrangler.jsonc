@@ -1,0 +1,26 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "bv2url",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-04-18",
+  "routes": [
+    {
+      "zone_name": "rainy.cyou",
+      "pattern": "bv2url.rainy.cyou",
+      "custom_domain": true,
+    },
+  ],
+  "vars": {
+    "CORS_ORIGIN": "https://blog.rainy.cyou",
+    "BILI_PROXY": "https://bv2url-proxy.rainy.cyou",
+  },
+  "triggers": {
+    "crons": ["*/12 * * * *"],
+  },
+  "observability": {
+    "logs": {
+      "enabled": true,
+      "invocation_logs": true,
+    },
+  },
+}
