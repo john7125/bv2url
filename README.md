@@ -1,4 +1,4 @@
-# BV2URL
+# bv2url
 
 基于 Cloudflare Workers 和 Hono 框架构建的 Bilibili (B站) 视频解析服务。主要功能是将 Bilibili 的 BV 号转换为可以直接播放的视频直链。
 
@@ -25,7 +25,7 @@
 
 ### 2. 私密环境变量 (Secrets)
 
-包含账户凭证与鉴权 Token，**绝对不可**硬编码在代码或 `wrangler.jsonc` 中。
+包含账户凭证与鉴权 Token，**绝对不可**硬编码在代码或 `wrangler.jsonc` 中。  
 项目本地开发时，在根目录创建一个名为 \`.dev.vars\` 的文件，并在其中填入你的私密变量。
 
 | 变量名        | 说明                                                         |
