@@ -1,4 +1,4 @@
-# bv2url
+# bv2url1
 
 基于 Cloudflare Workers 和 Hono 框架构建的 Bilibili (B站) 视频解析服务。主要功能是将 Bilibili 的 BV 号转换为可以直接播放的视频直链。
 
